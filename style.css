@@ -16,7 +16,7 @@ body {
 }
 
 body {
-  background: white;
+  background: rgb(180, 178, 178);
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
 }
@@ -251,4 +251,8 @@ textarea{
 	-ms-transform: scale(1.5); 
   -webkit-transform: scale(1.5); 
   transform: scale(1.5);
+}
+
+#about{
+	text-align: center;
 }
