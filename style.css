@@ -175,8 +175,8 @@ p{
 .img3{
 	image-orientation: from-image;
 	display: block;
-	height: 200px;
-    width: 300px;
+	height: 300px;
+    width: 250px;
 	border-radius: 30px;
 	float: left;
 	padding: 5px;
@@ -206,6 +206,12 @@ p{
   transform: scale(1.5);
 }
 
+.img6{
+	height: 30px;
+	width: 30px;
+	transition: transform .2s;
+}
+
 .row{
 	width: 100%;
 }
@@ -224,4 +230,25 @@ p{
 
 #qrcoder{
 	text-align: center;
+}
+#contact{
+	text-align: center;
+}
+input{
+	font-family: 'Roboto', sans-serif;
+}
+textarea{
+	font-family: 'Roboto', sans-serif;
+}
+
+#emj{
+	background-color: transparent;
+	border-color: transparent;
+	transition: transform .2s;
+}
+
+#emj:hover{
+	-ms-transform: scale(1.5); 
+  -webkit-transform: scale(1.5); 
+  transform: scale(1.5);
 }

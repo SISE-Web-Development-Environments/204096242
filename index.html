@@ -19,9 +19,12 @@
 <br/>
 <br/>
 <p id="about title">about me</p>
-blablablablablablablablablablablablablablablablablabla<br/>
-blablablablablablablablablablablablablablablablablabla<br/>
-blablablablablablablablablablablablablablablablablabla<br/>
+My name is <b>Dor Elkabetz</b>, 
+I'm a third year Information Systems Engineering student.<br>
+I live with my girlfriend in Beer Sheba and we love playing pool!<br>
+The subject i find the most fascinating so far (From the subjects we've learned) is artificial intelligence and reinforced learning.<br>
+I found learning all the functions of css the most challenging aspect at this assignment.<br>
+A figure which I looked up to during my life is ex Maccabi Haifa Player <b>Reuven Atar</b> which i adore..<img src="MHFC-Reuven-Atar.jpg" alt="oops" class=img6>&#x1F49A &#x1F49A 
 </section>
 
 <section id="photos" class="section">
@@ -78,10 +81,17 @@ blablablablablablablablablablablablablablablablablabla<br/>
 <br/>
 <br/>
 <br/>
-<p id="ans title">ans</p>
-blablablablablablablablablablablablablablablablablabla<br/>
-blablablablablablablablablablablablablablablablablabla<br/>
-blablablablablablablablablablablablablablablablablabla<br/>
+<p id="ans title">Answers</p>
+<b>Question 1</b><br>
+* Web 1 is consisted of static content while Web 2 and Web 3 are dynamic and responsive to user input <br>
+* Web 2 premits users to retrieve and classify the information collectively.<br>
+* Web 3 is more focused on backend upgradation the Web 1 and Web 2.<br>
+  In addition Web 3
+Semantics to understand queries rather then looking for the exact keyword.<br> <br>
+<b>Question 2</b><br>
+When looking at the querie "Drugs side effect" in web 1 or 2 we'll see web pages with the same exact 
+keywords while Web 3 will look at web pages which consist of words which are semantically close to the 
+original querie. 
 </section>
 
 <section id="contact" class="section">
@@ -90,16 +100,38 @@ blablablablablablablablablablablablablablablablablabla<br/>
 <br/>
 <br/>
 <p id="contact title">contact me</p>
-<form action:"mailto:dorelkab@post.bgu.ac.il" method="post" enctype="text/plain">
-  Name:<br>
-  <input type="text" name="name"><br>
-  E-mail:<br>
-  <input type="text" name="mail"><br>
-  Comment:<br>
-  <input type="text" name="comment" size="50"><br><br>
-  <input type="submit" value="Send">
-  <input type="reset" value="Reset">
-  </form>
+<form action="mailto:dorelkab@post.bgu.ac.il?subject=subject&amp;body=body">
+  Email:<br>
+  <input type="text" name="email"><br>
+  Subject:<br>
+  <input type="text" name="subject"><br>
+  Message:<br>
+  <textarea name="body" id="message" rows="10" cols="30" value=""></textarea><br>
+  <br>
+  <input  type="submit" value="send">
+  <input  type="reset" value="reset">
+  <br><br>
+  <input id="emj" type="button" value="&#x1F600" onclick="emoji('&#x1F600')">
+  <input id="emj" type="button" value="&#x1F601" onclick="emoji('&#x1F601')">
+  <input id="emj" type="button" value="&#x1F602" onclick="emoji('&#x1F602')">
+  <input id="emj" type="button" value="&#x1F605" onclick="emoji('&#x1F605')">
+  <input id="emj" type="button" value="&#x1F607" onclick="emoji('&#x1F607')">
+  <input id="emj" type="button" value="&#x1F608" onclick="emoji('&#x1F608')">
+  <br>
+  <input id="emj" type="button" value="&#x1F609" onclick="emoji('&#x1F609')">
+  <input id="emj" type="button" value="&#x1F60A" onclick="emoji('&#x1F60A')">
+  <input id="emj" type="button" value="&#x1F60B" onclick="emoji('&#x1F60B')">
+  <input id="emj" type="button" value="&#x1F60D" onclick="emoji('&#x1F60D')">
+  <input id="emj" type="button" value="&#x1F60E" onclick="emoji('&#x1F60E')">
+  <input id="emj" type="button" value="&#x1F60F" onclick="emoji('&#x1F60F')">
+  <br>
+  <input id="emj" type="button" value="&#x1F610" onclick="emoji('&#x1F609')">
+  <input id="emj" type="button" value="&#x1F612" onclick="emoji('&#x1F60A')">
+  <input id="emj" type="button" value="&#x1F613" onclick="emoji('&#x1F60B')">
+  <input id="emj" type="button" value="&#x1F614" onclick="emoji('&#x1F60D')">
+  <input id="emj" type="button" value="&#x1F615" onclick="emoji('&#x1F60E')">
+  <input id="emj" type="button" value="&#x1F616" onclick="emoji('&#x1F60F')">
+</form>
 </section>
 </div>
 
@@ -116,5 +148,11 @@ $(function(){
     $('#menu').toggle($(this).scrollTop()>1000)
  });​
  </script>
+ <script type="text/javascript">
+  function emoji(emj){
+    var a=document.getElementById('message');
+    a.value=a.value+emj;
+  }
+</script>
 </body>
 </html>
