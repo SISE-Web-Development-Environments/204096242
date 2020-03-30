@@ -213,10 +213,15 @@ p{
 #photos{
 	width: 100%;
 }
-.section{
-	padding: 5px;
-}
 
 #playlist{
+	text-align: center;
+}
+
+#like{
+	text-align: center;
+}
+
+#qrcoder{
 	text-align: center;
 }

@@ -4,6 +4,8 @@
 <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
+  <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/he_IL/sdk.js#xfbml=1&version=v6.0"></script>
 <section class="buttons">
 <div class="container">
 <li><a href="#about" class="btn btn-1">About Me </a><a href="#photos" class="btn btn-1"> My Photos </a><a href="#playlist" class="btn btn-1"> My Playlist </a><a href="#like" class="btn btn-1"> Like </a><a href="#qrcoder" class="btn btn-1"> QR code </a><a href="#spa" class="btn btn-1"> Q&A </a><a href="#contact" class="btn btn-1"> Contact Me</a></li>
@@ -59,6 +61,7 @@ blablablablablablablablablablablablablablablablablabla<br/>
 <br/>
 <br/>
 <p id="like title">give me a like</p>
+<div class="fb-like" data-href="https://sise-web-development-environments.github.io/assignment1-dorelkab/" data-width="" data-layout="standard" data-action="like" data-size="large" data-share="true"></div>
 </section>
 
 <section id="qrcoder" class="section">
@@ -67,6 +70,7 @@ blablablablablablablablablablablablablablablablablabla<br/>
 <br/>
 <br/>
 <p id="scan title">scan my code</p>
+<img src="qr.png" alt="oops" class=img5>
 </section>
 
 <section id="spa" class="section">
@@ -75,6 +79,9 @@ blablablablablablablablablablablablablablablablablabla<br/>
 <br/>
 <br/>
 <p id="ans title">ans</p>
+blablablablablablablablablablablablablablablablablabla<br/>
+blablablablablablablablablablablablablablablablablabla<br/>
+blablablablablablablablablablablablablablablablablabla<br/>
 </section>
 
 <section id="contact" class="section">
@@ -83,6 +90,16 @@ blablablablablablablablablablablablablablablablablabla<br/>
 <br/>
 <br/>
 <p id="contact title">contact me</p>
+<form action:"mailto:dorelkab@post.bgu.ac.il" method="post" enctype="text/plain">
+  Name:<br>
+  <input type="text" name="name"><br>
+  E-mail:<br>
+  <input type="text" name="mail"><br>
+  Comment:<br>
+  <input type="text" name="comment" size="50"><br><br>
+  <input type="submit" value="Send">
+  <input type="reset" value="Reset">
+  </form>
 </section>
 </div>
 
